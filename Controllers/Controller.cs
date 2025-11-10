@@ -32,5 +32,15 @@ namespace FleetManager
 
             return dataService.InsertUser(username, password, role);
         }
+
+        public User TenterConnexion(string username, string password)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                return null;
+            }
+
+            return dataService.ValiderUtilisateur(username, password);
+        }
     }
 }
