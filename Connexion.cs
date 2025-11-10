@@ -8,7 +8,6 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace csharpBDD
 {
-    //TEST MODIFICATION
     internal class CnxConfig
     {
         // Méthode connexion
