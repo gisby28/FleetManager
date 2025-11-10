@@ -157,8 +157,6 @@ namespace FleetManager
                     Console.WriteLine("Erreur SQL (ValiderUtilisateur): " + e.Message);
                 }
             }
-
-            // Si on arrive ici, c'est que l'utilisateur n'a pas été trouvé ou qu'il y a eu une erreur
             return null;
         }
 

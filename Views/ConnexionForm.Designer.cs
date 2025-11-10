@@ -47,6 +47,7 @@
             connexionButton.TabIndex = 17;
             connexionButton.Text = "Se connecter";
             connexionButton.UseVisualStyleBackColor = false;
+            connexionButton.Click += connexionButton_Click;
             // 
             // label3
             // 
