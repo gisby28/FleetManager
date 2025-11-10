@@ -58,5 +58,10 @@ namespace FleetManager.Views // Assurez-vous que le namespace est correct
                                 MessageBoxIcon.Error);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

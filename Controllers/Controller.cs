@@ -17,7 +17,6 @@ namespace FleetManager
         {
             this.dataService = new DataService();
         }
-
         public List<User> GetTousLesUtilisateurs()
         {
             return dataService.SelectUsers();

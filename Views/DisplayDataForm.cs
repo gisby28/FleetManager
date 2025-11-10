@@ -24,5 +24,15 @@ namespace FleetManager.Views
             // Vous pouvez maintenant utiliser l'utilisateur
             this.Text = "FleetManager - Connecté : " + utilisateurActuel.Username;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DisplayDataForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
