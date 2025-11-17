@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\FleetManager2\\FleetManager\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\FleetManager\\FleetManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2F6B5C-32E5-49A3-9983-CFCD5329D7A2}|FleetManager\\FleetManager.csproj|c:\\users\\pc\\desktop\\fleetmanager\\fleetmanager\\fleetmanager\\views\\managedataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2F6B5C-32E5-49A3-9983-CFCD5329D7A2}|FleetManager\\FleetManager.csproj|solutionrelative:fleetmanager\\views\\managedataform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageDataForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\FleetManager\\FleetManager\\FleetManager\\Views\\ManageDataForm.cs",
+              "RelativeDocumentMoniker": "FleetManager\\Views\\ManageDataForm.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\FleetManager\\FleetManager\\FleetManager\\Views\\ManageDataForm.cs [Design]",
+              "RelativeToolTip": "FleetManager\\Views\\ManageDataForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T16:46:49.935Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
