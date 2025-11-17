@@ -33,7 +33,7 @@
             listBox1 = new ListBox();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // dataGridView1
             // 
@@ -53,7 +53,6 @@
             label1.Size = new Size(276, 46);
             label1.TabIndex = 1;
             label1.Text = "Sélectionner la table à afficher\r\nou à gérer";
-            label1.Click += label1_Click;
             // 
             // listBox1
             // 

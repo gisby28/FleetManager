@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using MySqlConnector;
 
-namespace FleetManager
+namespace FleetManager.Services
 {
-    internal class DataService
+    public class DataService
     {
-        private string cnxString = "Server=localhost;Database=fleetmanager;Uid=root;Pwd=;";
+        private static string cnxString = "Server=localhost;Database=fleetmanager;Uid=root;Pwd=;";
 
 
         // ---------------------------- USERS ----------------------------
@@ -72,7 +72,6 @@ namespace FleetManager
                 }
             }
         }
-        // Méthode suppression users
         public bool DeleteUser(int userId)
         {
             string req = "DELETE FROM users WHERE user_id = @user_id";
@@ -275,6 +274,20 @@ namespace FleetManager
                     Console.WriteLine("Erreur SQL (UpdateVehicule): " + e.Message);
                     return false;
                 }
+            }
+        }
+        public MySqlConnection GetConnection()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(cnxString);
+                connection.Open();
+                return connection;
+            }
+            catch (Exception ex)
+            {
+                // Relance l'exception pour que le formulaire puisse l'attraper
+                throw new Exception($"Erreur de connexion (DataService.GetConnection) : {ex.Message}", ex);
             }
         }
     }

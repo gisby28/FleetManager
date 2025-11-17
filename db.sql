@@ -18,3 +18,14 @@ CREATE TABLE historique(histo_id INT AUTO_INCREMENT,
                         PRIMARY KEY (histo_id),
                         FOREIGN KEY (immatriculation) REFERENCES vehicules(immatriculation));
 INSERT INTO users (username, password, role) VALUES ('admin', 'adminpassword', 'admin');
+
+USE historique;
+CREATE TRIGGER trg_maj_kilometrage
+ON historique
+AFTER INSERT
+FOR EACH ROW
+BEGIN
+    UPDATE vehicules
+    SET kilometrage_total = kilometrage_total + NEW.distance
+    WHERE immatriculation = NEW.immatriculation;
+END

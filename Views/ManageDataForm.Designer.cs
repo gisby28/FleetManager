@@ -28,27 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            updateButton = new Button();
+            deleteButton = new Button();
+            addButton = new Button();
+            cancelButton = new Button();
+            dataGridView1 = new DataGridView();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Location = new Point(300, 55);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(488, 383);
-            flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(26, 155);
+            label1.Location = new Point(72, 51);
             label1.Name = "label1";
             label1.Size = new Size(237, 23);
             label1.TabIndex = 1;
@@ -64,68 +59,92 @@
             label2.TabIndex = 2;
             label2.Text = "Données de l'élément séléctionné";
             // 
-            // button1
+            // updateButton
             // 
-            button1.Location = new Point(13, 210);
-            button1.Name = "button1";
-            button1.Size = new Size(119, 32);
-            button1.TabIndex = 3;
-            button1.Text = "Modifier";
-            button1.UseVisualStyleBackColor = true;
+            updateButton.Location = new Point(23, 87);
+            updateButton.Name = "updateButton";
+            updateButton.Size = new Size(210, 41);
+            updateButton.TabIndex = 3;
+            updateButton.Text = "Modifier";
+            updateButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // deleteButton
             // 
-            button2.Location = new Point(144, 210);
-            button2.Name = "button2";
-            button2.Size = new Size(119, 32);
-            button2.TabIndex = 4;
-            button2.Text = "Supprimer";
-            button2.UseVisualStyleBackColor = true;
+            deleteButton.Location = new Point(264, 87);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(212, 41);
+            deleteButton.TabIndex = 4;
+            deleteButton.Text = "Supprimer";
+            deleteButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // addButton
             // 
-            button3.Location = new Point(13, 258);
-            button3.Name = "button3";
-            button3.Size = new Size(119, 32);
-            button3.TabIndex = 5;
-            button3.Text = "Ajouter";
-            button3.UseVisualStyleBackColor = true;
+            addButton.Location = new Point(22, 134);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(211, 42);
+            addButton.TabIndex = 5;
+            addButton.Text = "Ajouter";
+            addButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // cancelButton
             // 
-            button4.Location = new Point(144, 258);
-            button4.Name = "button4";
-            button4.Size = new Size(119, 32);
-            button4.TabIndex = 6;
-            button4.Text = "Annuler";
-            button4.UseVisualStyleBackColor = true;
+            cancelButton.Location = new Point(264, 134);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new Size(210, 42);
+            cancelButton.TabIndex = 6;
+            cancelButton.Text = "Annuler";
+            cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(22, 195);
+            dataGridView1.MultiSelect = false;
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(474, 201);
+            dataGridView1.TabIndex = 7;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Location = new Point(502, 51);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(286, 345);
+            flowLayoutPanel1.TabIndex = 8;
             // 
             // ManageDataForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(dataGridView1);
+            Controls.Add(cancelButton);
+            Controls.Add(addButton);
+            Controls.Add(deleteButton);
+            Controls.Add(updateButton);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(flowLayoutPanel1);
             Name = "ManageDataForm";
             Text = "ManageDataForm";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private FlowLayoutPanel flowLayoutPanel1;
         private Label label1;
         private Label label2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button updateButton;
+        private Button deleteButton;
+        private Button addButton;
+        private Button cancelButton;
+        private DataGridView dataGridView1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
